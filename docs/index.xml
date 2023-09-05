@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mazdak Nasab</title>
+    <link>http://www.mazdak.xyz/</link>
+    <description>Recent content on Mazdak Nasab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.mazdak.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>http://www.mazdak.xyz/posts/my-first-post/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mazdak.xyz/posts/my-first-post/</guid>
+      <description>
+        
+          
+            Test Something here
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.mazdak.xyz/posts/calico_donottrack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mazdak.xyz/posts/calico_donottrack/</guid>
+      <description>
+        
+          
+            How doNotTrack policies work in Calico BPF Dataplane Almost all modern network systems, including stateful firewalls, make use of connection tracking (“conntrack”) because it consumes less processing power per packet and simplifies operations. However, there are use cases where connection tracking has a negative impact, as we described in Linux Conntrack: Why it breaks down and avoiding the problem. Distributed Denial of Service (DDoS) mitigation systems, defending against volumetric network attacks, is a well known example of such a use case, as it needs to drop malicious packets as fast as possible.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
