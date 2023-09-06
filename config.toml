@@ -1,4 +1,1 @@
-baseURL = 'http://www.mazdak.xyz'
-languageCode = 'en-us'
-title = 'Mazdak Nasab'
-theme = 'hugo-clarity'
+hugo.toml
