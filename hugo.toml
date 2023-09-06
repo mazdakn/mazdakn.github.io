@@ -1,4 +1,4 @@
-baseURL = 'http://www.mazdak.xyz'
+baseURL = 'https://www.mazdak.xyz'
 languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
