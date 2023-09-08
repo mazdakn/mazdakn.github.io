@@ -8,11 +8,6 @@
   url = "about/"
   weight = -109
 
-[[main]]
-  name = "Resume"
-  url = "resume/"
-  weight = -108
-
 # social menu links
 
 [[social]]

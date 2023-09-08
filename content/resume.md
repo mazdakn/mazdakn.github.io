@@ -1,3 +1,7 @@
+---
+title: Resume
+date: 2023-09-08
+---
 # MAZDAK NASAB 
 [mazdak.nasab@gmail.com](mailto:mazdak.nasab@gmail.com) | [github.com/mazdakn](https://github.com/mazdakn) | [linkedin.com/in/mazdakn](https://www.linkedin.com/in/mazdakn)
 
