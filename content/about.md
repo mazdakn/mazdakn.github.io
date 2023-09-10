@@ -14,17 +14,23 @@ You can find more information about me in my [resume](https://drive.google.com/f
 - Advanced knowledge of **open source ecosystem** for building high available infrastructure
 
 ### EXPERIENCE
-**Senior Software Engineer** | Tigera, Vancouver, Canada | 2021 - Present
+**Senior Software Engineer**</br>
+Tigera, Vancouver, Canada | 2021 - Present
 
-**Core Developer** | Project Calico | 2021 - Present
+**Core Developer**</br>
+Project Calico | 2021 - Present
 
-**Network Security Architect** | Ericsson, Sweden | 2020 - 2021
+**Network Security Architect**</br>
+Ericsson, Sweden | 2020 - 2021
 
-**Cloud Architect - Network & Virtualization Specialist** | Ericsson, Sweden | 2017 - 2020
+**Cloud Architect - Network & Virtualization Specialist**</br>
+Ericsson, Sweden | 2017 - 2020
 
-**Senior Software Engineer** | Enea Software, Sweden | 2015 - 2017
+**Senior Software Engineer**</br>
+Enea Software, Sweden | 2015 - 2017
 
-**System Developer** | Ericsson, Sweden | 2013 - 2015
+**System Developer**</br>
+Ericsson, Sweden | 2013 - 2015
 
 ### EDUCATION
 **MSc in Computer Science - Networks and Distributed Systems**</br>
