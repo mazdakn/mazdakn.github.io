@@ -1,9 +1,4 @@
 [[main]]
-  name = "Home"
-  url = "about/"
-  weight = -110
-
-[[main]]
   name = "About"
   url = "about/"
   weight = -109
