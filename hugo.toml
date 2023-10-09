@@ -3,6 +3,13 @@ languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
 
+
+menu:
+  main:
+  - name: About
+    pageRef: /about
+    weight: -109
+
 [[main]]
   name = "About"
   url = "about/"
