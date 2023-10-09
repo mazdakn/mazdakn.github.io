@@ -3,30 +3,23 @@ languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
 
-
-menu:
-  main:
-  - name: About
-    pageRef: /about
-    weight: -109
-
-[[main]]
-  name = "About"
-  url = "about/"
-  weight = -109
+[menu]
+[[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = -109
 
 # social menu links
-
-[[social]]
+[[menu.social]]
   name = "github"
   type = "social"
   weight = 1
   url = "https://github.com/mazdakn"
-[[social]]
+[[menu.social]]
   name = "linkedin"
   weight = 3
   url = "https://www.linkedin.com/in/mazdakn"
-[[social]]
+[[menu.social]]
   name = "rss"
   weight = 4
   url = "index.xml"
