@@ -7,7 +7,7 @@ theme = 'hugo-clarity'
 [[menu.main]]
     name = 'About'
     pageRef = '/about'
-    weight = -109
+    weight = 1
 
 # social menu links
 [[menu.social]]
@@ -17,9 +17,9 @@ theme = 'hugo-clarity'
   url = "https://github.com/mazdakn"
 [[menu.social]]
   name = "linkedin"
-  weight = 3
+  weight = 2
   url = "https://www.linkedin.com/in/mazdakn"
 [[menu.social]]
   name = "rss"
-  weight = 4
+  weight = 3
   url = "index.xml"
