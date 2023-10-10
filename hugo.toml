@@ -6,7 +6,7 @@ theme = 'hugo-clarity'
 [menu]
 [[menu.main]]
     name = 'About'
-    pageRef = '/about'
+    pageRef = '/posts/about'
     weight = 1
 
 # social menu links
