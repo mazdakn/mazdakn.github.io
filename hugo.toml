@@ -3,12 +3,6 @@ languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
 
-[menu]
-[[menu.main]]
-    name = 'About'
-    pageRef = '/posts/about'
-    weight = 1
-
 # social menu links
 [[menu.social]]
   name = "github"
