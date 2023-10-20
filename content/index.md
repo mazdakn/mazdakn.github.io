@@ -1,5 +1,5 @@
 ---
-date: 2023-09-08
+title: Mazdak Nasab
 sidebar: false
 ---
 I am a site reliability engineer and system developer with specialization in networks and communication systems.
