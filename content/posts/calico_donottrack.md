@@ -4,8 +4,6 @@ date: 2023-05-30
 draft: false
 toc: true
 ---
-# How doNotTrack policies work in Calico BPF Dataplane
-
 Almost all modern network systems, including stateful firewalls, make use of connection tracking (“conntrack”)
 because it consumes less processing power per packet and simplifies operations. However, there are
 use cases where connection tracking has a negative impact, as we described in

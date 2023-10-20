@@ -1,3 +1,6 @@
 [submodule "themes/hugo-clarity"]
 	path = themes/hugo-clarity
 	url = https://github.com/chipzoller/hugo-clarity
+[submodule "themes/poison"]
+	path = themes/poison
+	url = git@github.com:lukeorth/poison.git

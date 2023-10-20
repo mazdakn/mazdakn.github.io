@@ -1,25 +1,11 @@
 baseURL = 'https://www.mazdak.xyz/'
 languageCode = 'en-us'
 title = 'Mazdak Nasab'
-theme = 'hugo-clarity'
+theme = 'poison'
 
-[menu]
-[[menu.main]]
-    name = 'About'
-    pageRef = '/posts/about'
-    weight = 1
-
-# social menu links
-[[menu.social]]
-  name = "github"
-  type = "social"
-  weight = 1
-  url = "https://github.com/mazdakn"
-[[menu.social]]
-  name = "linkedin"
-  weight = 2
-  url = "https://www.linkedin.com/in/mazdakn"
-[[menu.social]]
-  name = "rss"
-  weight = 3
-  url = "index.xml"
+[params]
+    brand = "Mazdak Nasab"
+    brand_image = "/images/mazdak.jpg"
+    description = "Network System Engineer"
+    github_url = "https://github.com/mazdakn"
+    linkedin_url = "https://linkedin.com/in/mazdakn"
