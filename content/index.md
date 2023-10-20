@@ -8,9 +8,6 @@ Graduated with a MSc in Computer Science - Networks and Distributed Systems from
 I enjoy studying, building and developing network systems using Linux, C, Rust, Golang, and open source solutions.
 You can find more information about me in my [resume](https://drive.google.com/file/d/1HOWM9vcwScF6BEWcyVe9Dp5uQLK8VJUp/view?usp=sharing).
 
-![Mazdak Nasab](../images/mazdak.jpg "Mazdak Nasab)
-
-
 - **MSc in Computer Science - Networks and Distributed Systems**
 - **Over 10 years** of experience designing and developing secure, robust and innovative network systems
 - Experienced in **Network Systems** and **Services**, **Cloud** and **Data Center Networking**
