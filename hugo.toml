@@ -1,6 +1,6 @@
 baseURL = 'https://www.mazdak.xyz/'
 languageCode = 'en-us'
-title = 'About'
+title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
 
 # social menu links
