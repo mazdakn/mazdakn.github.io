@@ -1,9 +1,11 @@
 ---
-title: About Me
+title: Mazdak Nasab
 date: 2023-09-08
 sidebar: false
 toc: true
 ---
+![Mazdak Nasab](../images/mazdak.jpg)
+
 I am a site reliability engineer and system developer with specialization in networks and communication systems.
 Graduated with a MSc in Computer Science - Networks and Distributed Systems from Chalmers University of Technology.
 I enjoy studying, building and developing network systems using Linux, C, Rust, Golang, and open source solutions.
@@ -16,7 +18,7 @@ You can find more information about me in my [resume](https://drive.google.com/f
 - Proficient in **Linux Network Stack**(eBPF/XDP, Netfilter/Iptables, Traffic Control, Socket API, IPVS)
 - Advanced knowledge of **open source ecosystem** for building high available infrastructure
 
-### EXPERIENCE
+## EXPERIENCE
 **Senior Software Engineer** | Tigera, Vancouver, Canada | 2021 - Present
 - Developing and maintaining enterprise features, like observability, of Project Calico data plane
 - Designed and developed routing egress traffic based on destination via different gateways
@@ -49,6 +51,6 @@ You can find more information about me in my [resume](https://drive.google.com/f
 - Automated deployment for zero touch provisioning to reduce the deployment time from days to minutes
 - Optimized throughput by tuning host and guest kernel and by bypassing kernel using Intel DPDK
 
-### EDUCATION
+## EDUCATION
 **MSc in Computer Science - Networks and Distributed Systems**</br>
 Chalmers University of Technology, Sweden | July 2013
