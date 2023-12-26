@@ -1,4 +1,4 @@
-baseURL = 'http://mazdakn.github.io/'
+baseURL = 'https://mazdakn.github.io/'
 languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
