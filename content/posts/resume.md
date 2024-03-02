@@ -1,3 +1,10 @@
+---
+title: Resume
+date: 2023-12-20
+sidebar: true
+toc: false
+draft: true
+---
 # MAZDAK NASAB 
 [mazdak.nasab@gmail.com](mailto:mazdak.nasab@gmail.com) | [github.com/mazdakn](https://github.com/mazdakn) | [linkedin.com/in/mazdakn](https://www.linkedin.com/in/mazdakn)
 
