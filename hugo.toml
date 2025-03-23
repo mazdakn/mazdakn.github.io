@@ -2,7 +2,6 @@ baseURL = 'https://www.mazdak.tech/'
 languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
-disqusShortname = ""
 
 [[menu.main]]
   name = "Home"
