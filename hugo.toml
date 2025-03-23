@@ -3,6 +3,16 @@ languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
 
+[[menu.main]]
+  name = "Home"
+  url = ""
+  weight = -110
+
+[[menu.main]]
+  name = "About"
+  url = "about/"
+  weight = -109
+
 # social menu links
 [[menu.social]]
   name = "github"
