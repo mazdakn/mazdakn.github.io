@@ -1,13 +1,20 @@
 ---
 menus: 'About'
 title: About Me
-date: 2023-12-20
+date: 2025-03-27
 sidebar: true
 toc: false
 ---
-![Mazdak Nasab](../images/mazdak.jpg " ")
+![Mazdak Nasab](../images/mazdak.png " ")
 
-I am a site reliability engineer and system developer with specialization in networks and communication systems.
-Graduated with a MSc in Computer Science - Networks and Distributed Systems from Chalmers University of Technology.
-I enjoy studying, building and developing network systems using Linux, C, Rust, Golang, and open source solutions.
-You can find more information about me in my [resume](https://drive.google.com/file/d/1HOWM9vcwScF6BEWcyVe9Dp5uQLK8VJUp/view?usp=sharing).
+I am a site reliability engineer and system developer with specialization in network security.
+Currently, I'm a Senior Software Engineer at Tigera, developing and maintaining [Project Calico], most widely deployed 
+open source solution for container networking and security.
+Please check out my [Github] profile to see my recents projects. For more information please refer to my [LikedIn] page, and [resume].
+
+
+
+[Project Calico]: https://github.com/projectcalico/calico
+[Github]: https://github.com/mazdakn
+[LikedIn]: https://www.linkedin.com/in/mazdakn/
+[resume]: https://drive.google.com/file/d/1HOWM9vcwScF6BEWcyVe9Dp5uQLK8VJUp/view?usp=sharing
