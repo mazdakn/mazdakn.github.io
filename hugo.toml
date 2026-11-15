@@ -16,7 +16,7 @@ ignoreFiles = ['README\.md$']
   showreadtime = false
   showshare = false
   [cascade._target]
-    path = '{/_index.md,/about.md}'
+    path = '{/,/about}'
 
 [[cascade]]
   draft = true
