@@ -4,14 +4,9 @@ title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
 
 [[menu.main]]
-  name = "Home"
+  name = "About"
   url = ""
   weight = -110
-
-[[menu.main]]
-  name = "About"
-  url = "about/"
-  weight = -109
 
 # social menu links
 [[menu.social]]

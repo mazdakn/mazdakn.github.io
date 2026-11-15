@@ -1,0 +1,17 @@
+{{- define "main" }}
+{{- $p := .Params }}
+<div class="{{ if ne $p.singleColumn true }}grid-inverse {{ end }}wrap content">
+  <article class="post_content">
+    {{- with .Title }}
+      <h1 class="post_title">{{ . | markdownify }}</h1>
+    {{- end }}
+    {{- partial "post-meta" . }}
+    <div class="post_body">
+      {{- .Content }}
+    </div>
+  </article>
+  {{- if ( ne $p.sidebar false ) }}
+    {{- partial "sidebar" . }}
+  {{- end }}
+</div>
+{{- end }}
