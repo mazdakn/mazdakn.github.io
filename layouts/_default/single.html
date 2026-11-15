@@ -4,7 +4,7 @@
 {{- $hasLeadingH1 := gt (len (findRE `^\s*#\s+` .RawContent 1)) 0 }}
 <div class="{{ if ne $p.singleColumn true }}grid-inverse {{ end }}wrap content">
   <article class="post_content">
-    {{- if not $hasLeadingH1 }}
+    {{- if and (not $hasLeadingH1) (ne $p.showtitle false) }}
       {{- $t := partial "page-title" . }}
       <h1 class="post_title">{{ $t | markdownify }}</h1>
     {{- end }}

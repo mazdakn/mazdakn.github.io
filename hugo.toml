@@ -16,6 +16,7 @@ ignoreFiles = ['README\.md$']
 
 [[cascade]]
   title = 'About Me'
+  showtitle = false
   sidebar = true
   toc = false
   showdate = false
