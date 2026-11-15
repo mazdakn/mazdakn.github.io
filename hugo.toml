@@ -5,6 +5,12 @@ theme = 'hugo-clarity'
 enableGitInfo = true
 ignoreFiles = ['README\.md$']
 
+[params]
+  mainSections = ['posts']
+
+[markup.goldmark.renderHooks.link]
+  enableDefault = true
+
 [frontmatter]
   date = ['date', ':git', ':fileModTime', ':default']
 
@@ -19,16 +25,28 @@ ignoreFiles = ['README\.md$']
     path = '{/,/about}'
 
 [[cascade]]
-  draft = true
+  draft = false
   sidebar = true
   toc = true
   [cascade._target]
-    path = '{/posts/**,/resume/**}'
+    path = '/posts/**'
+
+[[cascade]]
+  draft = true
+  sidebar = true
+  toc = false
+  [cascade._target]
+    path = '/resume/**'
 
 [[menu.main]]
   name = "About"
   url = ""
   weight = -110
+
+[[menu.main]]
+  name = "Posts"
+  url = "posts/"
+  weight = -109
 
 # social menu links
 [[menu.social]]
