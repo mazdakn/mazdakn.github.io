@@ -5,7 +5,6 @@ draft: true
 sidebar: true
 toc: true
 ---
-# How doNotTrack policies work in Calico BPF Dataplane
 
 Almost all modern network systems, including stateful firewalls, make use of connection tracking (“conntrack”)
 because it consumes less processing power per packet and simplifies operations. However, there are
@@ -42,8 +41,8 @@ or NAT are executed. Secondly, the policy program only includes doNotTrack polic
 types of policies, which usually are fewer. The following shows the skeleton of the main programs
 ([source](https://github.com/projectcalico/calico/blob/master/felix/bpf-gpl/xdp.c)).
 
-```
-SEC("xdp/calico_entrypoint”)
+```c
+SEC("xdp/calico_entrypoint")
 int xdp_calico_entry(struct xdp_md *xdp)
 {
   // 1 - Initialise the context, which is stored on the stack, and the state,
@@ -81,7 +80,7 @@ drop program to simply return `XDP_DROP` for dropping packets. It is possible to
 policy program, but a dedicated program is used instead for debugging purposes like logging
 and keeping a counter of dropped packets.
 
-```
+```c
 SEC("xdp/drop")
 int calico_xdp_drop(struct xdp_md *xdp)
 {
@@ -104,7 +103,7 @@ structure between the XDP and TC programs, and this is exactly how Calico works.
 uses a 32 bit flag to share information with the TC program. The struct is shown below and defined in the
 [metadata.h](https://github.com/projectcalico/calico/blob/4bbda7d465f5df20ffb18c2f7b897cf899e9bc46/felix/bpf-gpl/metadata.h#LL11C1-L14C30) file.
 
-```
+```c
 struct cali_metadata {
   __u32  flags;
 };
@@ -112,7 +111,7 @@ struct cali_metadata {
 
 When a packet is accepted by a doNotTrack policy, the packet is sent to the TC layer with its meta data set to a special flag.
 
-```
+```c
 SEC("xdp/accept")
 int calico_xdp_accepted_entrypoint(struct xdp_md *xdp)
 {
@@ -132,7 +131,7 @@ accepted by a doNotTrack policy in a XDP program, so it allows the packet to mov
 This step happens at the beginning of the TC program, so no more processing, such as conntrack operations,
 is performed.
 
-```
+```c
 // if CALI_META_ACCEPTED_BY_XDP is set in metadata
 if (xdp2tc_get_metadata(skb) & CALI_META_ACCEPTED_BY_XDP)
 {
@@ -146,11 +145,11 @@ if (xdp2tc_get_metadata(skb) & CALI_META_ACCEPTED_BY_XDP)
 
 Moreover, at this stage, the packet mark is set to `CALI_SKB_MARK_BYPASS` to tell the Linux conntrack
 to not track the packet - in case BPF cannot forward the packet on its own. This mark is checked later
-on by an iptables rule in the prerouting hook of the raw table, to identify the packets that did matched
+on by an iptables rule in the prerouting hook of the raw table, to identify the packets that matched
 with a doNotTrack policy, and jump to a custom table, where the packet mark is cleared, and
 the Linux conntrack is notified to not to track this packet:
 
-```
+```bash
 -A cali-PREROUTING -m mark --mark CALI_SKB_MARK_BYPASS -g cali-untracked-policy
 
 -A cali-untracked-policy -j MARK --set-xmark 0x0/0x0
@@ -177,7 +176,7 @@ Below is an example of a doNotTrack policy for egress path, where the accepted p
 be tracked by Linux conntrack, and marked with `CALI_SKB_MARK_BYPASS` to also inform TC programs to accept
 without tracking these packets. All these steps allow a traffic flow untracked in both directions.
 
-```
+```bash
 -A cali-OUTPUT -j cali-to-host-endpoint
 -A cali-OUTPUT -m mark --mark 0x10000/0x10000 -j MARK --set-xmark CALI_SKB_MARK_BYPASS
 -A cali-OUTPUT -m mark --mark CALI_SKB_MARK_BYPASS -j ACCEPT

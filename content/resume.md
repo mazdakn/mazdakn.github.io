@@ -17,14 +17,14 @@ draft: true
 - Developing & maintaining Project Calico, most widely adopted container networking & security solution  
 - Maintaining Calico to run seamlessly on on-prem data centers and public cloud (Azure, GCP, AWS)  
 - Designing and developing features using Linux routing, packet filtering, eBPF/XDP and traffic control  
-- Enhanced Calico policy engine by introducing tiered policies and kubernetes admin network policies  
+- Enhanced Calico policy engine by introducing tiered policies and Kubernetes admin network policies  
 - Introduced network observability by using connection and policy information to generate flow logs  
 - Improved BGP route advertisement in Calico by introducing route filtering based on different attributes  
 - Introduced stateless firewall capability in Calico eBPF data plane using XDP programs
 
 
 **Senior Software Engineer** | Tigera, Vancouver, Canada | 2021 - Present
-- Developing and maintaining enterprise feature, like observability and egress control, of Project Calico
+- Developing and maintaining enterprise features, like observability and egress control, of Project Calico
 - Designed and developed policy based egress control to route egress traffic via different gateways
 - Designed and developed egress gateway functionality in Azure to control workload's outbound traffic
 - Developed a workload run time security solution by monitoring syscalls and events using eBPF
