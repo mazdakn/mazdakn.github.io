@@ -1,3 +1,6 @@
 [submodule "themes/hugo-clarity"]
 	path = themes/hugo-clarity
 	url = https://github.com/chipzoller/hugo-clarity
+[submodule "content"]
+	path = content
+	url = https://github.com/mazdakn/markdowns.git

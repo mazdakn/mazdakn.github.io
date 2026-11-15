@@ -2,6 +2,12 @@ baseURL = 'https://www.mazdak.tech/'
 languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
+ignoreFiles = ['README\.md$']
+
+[[cascade]]
+  draft = true
+  [cascade._target]
+    path = '{/posts/**,/resume/**}'
 
 [[menu.main]]
   name = "About"
