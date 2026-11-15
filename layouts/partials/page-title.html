@@ -1,0 +1,10 @@
+{{- $title := .Title -}}
+{{- if not $title -}}
+  {{- $h1 := findRE `(?m)^#\s+(.+)$` .RawContent 1 -}}
+  {{- if $h1 -}}
+    {{- $title = replaceRE `(?m)^#\s+` "" (index $h1 0) -}}
+  {{- else if .File -}}
+    {{- $title = humanize .File.ContentBaseName -}}
+  {{- end -}}
+{{- end -}}
+{{- return (trim $title " \r\n") -}}

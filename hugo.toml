@@ -2,10 +2,27 @@ baseURL = 'https://www.mazdak.tech/'
 languageCode = 'en-us'
 title = 'Mazdak Nasab'
 theme = 'hugo-clarity'
+enableGitInfo = true
 ignoreFiles = ['README\.md$']
+
+[frontmatter]
+  date = ['date', ':git', ':fileModTime', ':default']
+
+[[cascade]]
+  title = 'About Me'
+  sidebar = true
+  toc = false
+  showdate = false
+  showreadtime = false
+  showshare = false
+  aliases = ['/about/']
+  [cascade._target]
+    path = '/_index.md'
 
 [[cascade]]
   draft = true
+  sidebar = true
+  toc = true
   [cascade._target]
     path = '{/posts/**,/resume/**}'
 
